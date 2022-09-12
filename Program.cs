@@ -42,7 +42,7 @@ app.MapGet("/hello", () =>
 });
 
 
-app.MapPost("/message", (string name) => "Hello " + name == null ? "undefined" : name);
+app.MapPost("/message", (string name) => "Hello " + (name == null ? "undefined" : name));
 
 app.Run();
 
